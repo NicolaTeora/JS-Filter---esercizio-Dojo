@@ -1,0 +1,69 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(94, 94, 170);
+}
+
+/* Container's elements */
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.file-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input-container button {
+  padding: 10px 20px;
+  background-color: #96c45a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-input-container button:hover {
+  background-color: #0056b3;
+}
+
+.file-input-container input[type="file"] {
+  display: none;
+}
+
+.image-container {
+  margin-top: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.filters {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.filters label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+/* debug */

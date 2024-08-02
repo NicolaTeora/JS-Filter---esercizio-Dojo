@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image filters</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- js -->
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- dove caricare e visualizzare l'immagine -->
+      <div class="file-input-container">
+        <button id="customButton">Carica immagine</button>
+        <input type="file" id="fileInput" />
+      </div>
+      <div class="image-container">
+        <img id="imageDisplay" src="" alt="Image will be displayed here" />
+      </div>
+
+      <!-- filtri da applicare all'immagine -->
+      <div class="filters">
+        <div class="item">
+          <label for="grayscale">grayscale</label>
+          <input
+            type="range"
+            id="grayscale"
+            name="grayscale"
+            value="0"
+            min="0"
+            max="100"
+          />
+        </div>
+        <div class="item">
+          <label for="saturate">saturate</label>
+          <input
+            type="range"
+            id="saturate"
+            name="saturate"
+            value="100"
+            min="0"
+            max="200"
+          />
+        </div>
+        <div class="item">
+          <label for="vol">sepia</label>
+          <input
+            type="range"
+            id="sepia"
+            name="sepia"
+            value="0"
+            min="0"
+            max="100"
+          />
+        </div>
+        <div class="item">
+          <label for="invert">invert</label>
+          <input
+            type="range"
+            id="invert"
+            name="invert"
+            value="0"
+            min="0"
+            max="100"
+          />
+        </div>
+        <div class="item">
+          <label for="contrast">contrast</label>
+          <input
+            type="range"
+            id="contrast"
+            name="contrast"
+            value="100"
+            min="0"
+            max="200"
+          />
+        </div>
+        <div class="item">
+          <label for="brightness">brightness</label>
+          <input
+            type="range"
+            id="brightness"
+            name="brightness"
+            value="100"
+            min="0"
+            max="200"
+          />
+        </div>
+        <div class="item">
+          <label for="blur">blur</label>
+          <input
+            type="range"
+            id="blur"
+            name="blur"
+            value="0"
+            min="0"
+            max="10"
+          />
+        </div>
+        <div class="item">
+          <label for="hue-rotate">hue-rotate</label>
+          <input
+            type="range"
+            id="hue-rotate"
+            name="hue-rotate"
+            value="0"
+            min="0"
+            max="360"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
