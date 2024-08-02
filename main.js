@@ -37,6 +37,10 @@ document
     }
   });
 
+/* 
+funzione legge i valori degli input range e 
+aggiorna i filtri CSS dell'immagine di conseguenza. 
+*/
 function updateFilters() {
   let grayscale = document.getElementById("grayscale").value;
   let saturate = document.getElementById("saturate").value;
@@ -61,6 +65,10 @@ function updateFilters() {
   document.getElementById("imageDisplay").style.filter = filters;
 }
 
+/* 
+Ogni input range ha un event listener che chiama 
+updateFilters quando il valore dell'input cambia  
+*/
 document.getElementById("grayscale").addEventListener("input", updateFilters);
 document.getElementById("saturate").addEventListener("input", updateFilters);
 document.getElementById("sepia").addEventListener("input", updateFilters);
